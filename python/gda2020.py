@@ -452,7 +452,7 @@ if __name__=="__main__":
 
     # convert from lat/long to mga2020
     calc_east, calc_north, psf, grid_conv = geo_to_grid(lat, lon, cm, projection)
-
+    print(psf, grid_conv)
     print("calculated easting: {0} difference: {1:.5f}".format(calc_east, calc_east-east))
     print("calculated northing: {0} difference: {1:.5f}".format(calc_north, calc_north-north))
 
